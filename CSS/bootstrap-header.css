@@ -1,0 +1,225 @@
+.top {
+  width: 100%;
+  height: 6vh;
+  background-color: #eeeeee;
+}
+
+.top2 {
+  max-width: 100%;
+  height: 10vh;
+  background-color: white;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.top2 .img {
+  width: 20%;
+  /* margin-left: 20%; */
+  /* margin-top: 10px; */
+  /* transform: translate(-50%, 0); */
+}
+
+.toptext1 {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  margin-right: 20%;
+}
+
+.toptext2 {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  margin-left: 20%;
+}
+
+.navBar {
+  background-color: #000;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: medium;
+  text-transform: lowercase;
+}
+
+.form-inline {
+  /* width: 100%; */
+  height: 50%;
+}
+
+.delivery {
+  justify-content: center;
+  margin-top: 20px;
+  letter-spacing: 0.1rem;
+  /* flex: left;
+    flex-wrap: wrap; */
+}
+.delivery img {
+  width: 10%;
+}
+
+.deliveryTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.Box {
+  width: 20%;
+  height: 100%;
+  background-color: #aaa;
+  padding: 48px 0 0;
+  margin-right: 48px;
+}
+
+.Box2 {
+  width: 20%;
+  height: 100%;
+  background-color: #aaa;
+  padding: 48px 0 0;
+  /* margin-right:48px ; */
+}
+
+.card-body .card-title {
+  font-family: "Playfair Display", serif;
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 5.5rem;
+}
+
+.card-body .card-text {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  font-weight: 200;
+  line-height: 3rem;
+}
+
+/* .card-body small{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    line-height: 3rem;
+} */
+
+.card-text2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  line-height: 4rem;
+}
+
+/* <!-- FW20 --> */
+.card-body a {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+/* .carousel-item {
+  width: 100vh;
+} */
+
+.carousel-item img {
+  width: 200px;
+  object-fit: cover;
+}
+
+.jumbBox img {
+  width: 100%;
+  object-fit: cover;
+  margin-top: -50;
+}
+
+.card-body2 h5 {
+  font-family: "Playfair Display", serif;
+  font-size: 4.5rem;
+  font-weight: 200;
+}
+
+.card-body2 p {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 200;
+}
+
+.card-body3 h5 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.3rem;
+  font-weight: 200;
+  line-height: 3rem;
+}
+
+.card-body3 a {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.imageBox {
+  width: 100%;
+  flex-direction: row;
+}
+
+.imageBox .box {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  /* margin: 10px; */
+}
+
+.imageBox .box1 img {
+  width: 40vh;
+  height: 60vh;
+  object-fit: cover;
+  transition: width 1s;
+  margin: 0;
+}
+.imageBox .box2 img {
+  width: 40vh;
+  height: 60vh;
+  transition: width 1s;
+  object-fit: cover;
+}
+.imageBox .box3 img {
+  width: 40vh;
+  height: 60vh;
+  transition: width 1s;
+  object-fit: cover;
+}
+
+.imageBox .box4 img {
+  width: 40vh;
+  height: 60vh;
+  transition: width 1s;
+  object-fit: cover;
+}
+
+.imageBox .box1:hover img {
+  width: 50vh;
+  height: 60vh;
+  /* object-fit: cover; */
+}
+
+.imageBox .box2:hover img {
+  width: 50vh;
+  height: 60vh;
+  object-fit: cover;
+}
+.imageBox .box3:hover img {
+  width: 50vh;
+  height: 60vh;
+  /* object-fit: cover; */
+}
+.imageBox .box4:hover img {
+  width: 50vh;
+  height: 60vh;
+  /* object-fit: cover; */
+}

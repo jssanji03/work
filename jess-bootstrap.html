@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Net-A-PORT</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.css">
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/all.css">
+    <link rel="stylesheet" href="./CSS/bootstrap-header.css" />
+    <link rel="stylesheet" href="./CSS/bootstrap-footer.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Playfair+Display:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    html {
+        font-size: 10px;
+    }
+
+    html * {
+        font-size: 1rem;
+    }
+
+    @include media-breakpoint-up(sm) {
+        html {
+            font-size: 1.2rem;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        html {
+            font-size: 1.4rem;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        html {
+            font-size: 1.4rem;
+        }
+    }
+
+
+    .carousel-inner a:hover {
+        filter: opacity(.7)
+    }
+
+    /* media query */
+@media (max-width: 600px) {
+   .navBar {
+    width: 100%;
+  }
+  .toptext1 {
+    display: none;
+  }
+  .toptext2 {
+    display: none;
+  }
+  .top2 img{
+      width: 300px;
+      height: 100px;
+  }
+  
+}
+
+
+
+</style>
+
+<body>
+    <header>
+        <div class="container-fluid p-0">
+            <div class="top"></div>
+        </div>
+        <div class="container-fluid mx-auto">
+            <div class="row col-4 col-md-4 col-xl-12  justify-content-center">
+               <div class="top2 row col-4 col-md-4 col-xl-12"> 
+                   <div class="toptext1">
+                        <tr>
+                            <td>States,$USD</td>
+                            <td>|</td>
+                            <td>English</td>
+                        </tr>
+                    </div>
+                    <div class="img"><img src="./images/Logo.jpg" class=" figure-img img-fluid"></div>
+                
+                    <div class="toptext2">
+                        <tr>
+                            <td>|</td>
+                            <th><i class="fas fa-shopping-bag"></i></th>
+                            <td>|</td>
+                            <th>Register</th>
+                            <td>|</td>
+                            <th>Sign In</th>
+                            <th><i class="fas fa-star"></i></th>
+                        </tr>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div class="navBar navbar-expand-sm">
+        <div class="row bg-black">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="btn-group btn-group-sm collapse navbar-collapse" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-red ">SALE</button>
+                <button type="button" class="btn btn-black">WHAT'S NEW</button>
+                <button type="button" class="btn btn-black ">DESIGNERS</button>
+                <button type="button" class="btn btn-black">CLOTHING</button>
+                <button type="button" class="btn btn-black">SHOES</button>
+                <button type="button" class="btn btn-black">BAGS</button>
+                <button type="button" class="btn btn-black">ACCESSORIES</button>
+                <button type="button" class="btn btn-black text-uppercase">Jewelry</button>
+                <button type="button" class="btn btn-black text-uppercase">Lingerie</button>
+                <button type="button" class="btn btn-black text-uppercase">beauty</button>
+                <button type="button" class="btn btn-black text-uppercase">editorial</button>
+                <button type="button" class="btn btn-black text-uppercase">what to wear</button>
+                <nav class="navbar navbar-light bg-light">
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+                    </form>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+<!-- 
+    <div class="container-fluid mx-auto pt-5 pb-5">
+        <div class="row">
+            <div class="card col-6 col-sm-3 text-center border-0" style="width: 30rem;">
+                <div class="delivery">
+                    <img
+                        src="https://www.net-a-porter.com/content/images/cms/ycm/resource/blob/141484/22f982d54d30291c9a4ed22dea77c72b/delivery-img-data.svg/w0.svg">
+                    <h5 class="deliveryTitle pt-3">Delivery</h5>
+                    <p class="card-text text-secondary pt-3">Same-day delivery available to NYC, the Hamptons and select
+                        areas of NJ and CT</p>
+                </div>
+            </div>
+
+            <div class="card col-6 col-sm-3 text-center border-0" style="width: 30rem;">
+                <div class="delivery">
+                    <img
+                        src="https://www.net-a-porter.com/content/images/cms/ycm/resource/blob/141488/61db477c386632a6f1ff2de9689d5091/apps-img-data.png/w0.png">
+                    <h5 class="deliveryTitle pt-3">Fashion at your fingertips</h5>
+                    <p class="card-text text-secondary pt-3">Explore NET‑A‑PORTER on iOS and Android, downloaded from
+                        the App Store</p>
+                </div>
+            </div>
+            <div class="card col-6 col-sm-3 text-center border-0" style="width: 30rem;">
+                <div class="delivery">
+                    <img
+                        src="https://www.net-a-porter.com/content/images/cms/ycm/resource/blob/141436/4aae321295e052ae7466c9326def5bc2/returns-img-data.svg/w0.svg">
+                    <h5 class="deliveryTitle pt-3">Returns</h5>
+                    <p class="card-text text-secondary pt-3">If you’d like a different size or a refund, we’ll collect
+                        your return from an address of your choice</p>
+                </div>
+            </div>
+
+            <div class="card col-6 col-sm-3 text-center border-0" style="width: 30rem;">
+                <div class="delivery">
+                    <img
+                        src="https://www.net-a-porter.com/content/images/cms/ycm/resource/blob/141430/4848e9c4e47d080e473a542ebbe40e8f/live-chat-img-data.png/w0.png">
+                    <h5 class="deliveryTitle pt-3">Expert advice</h5>
+                    <p class="card-text text-secondary pt-3">Exceptional customer care with 24-hour live chat</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- FW20 -->
+    <div class="container-fluid ml-5 mt-5 ">
+        <di class="row col-12 align-items-center justify-content-center mx-auto">
+            <div class="text-left mx-auto">
+                <img src="./images/B10.jpg" class="max-width：50% ml-0 pt-5 mg-fluid" alt="...">
+            </div>
+            <div class="card text-left border-0 mx-auto p-0" style="width: 40rem;">
+                <div class="card-body pt-5">
+                    <h5 class="card-title">Be first in the style stakes</h5>
+                    <p class="card-text text-dark pt-4 pb-4">Shop next season’s most-wanted runway pieces before
+                        anyone else with our new pre-order service</p>
+                    <u class="card-text mt-5"><a href="#" class="text-dark pt-5">Pre-order fall/winter ’20</a></u>
+                </div>
+            </div>
+
+    </div>
+
+ -->
+
+    <main>
+        <div class="container-fluid mt-5 pb-5 pt-3">
+            <div class="row col-12 col-md-6 col-xl-12 align-items-center ml-3 mx-auto justify-content-center">
+                <div class="card pb-5 border-0" style="width: 40rem;">
+                    <div class="card-body ">
+                        <p class="card-text2 text-muted mt-5">669 NEW ITEMS
+                        </p>
+                        <h5 class="card-title pt-3">What’s New</h5>
+                        <p class="card-text pt-4 pb-4">ahead of the style curve with our latest arrivals
+                        </p>
+                        <a href="#" class="btn btn-black ">Shop What’s New</a>
+                    </div>
+                </div>
+                <div id="carouselExampleInterval" class="carousel slide  pt-5" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active ">
+                            <a href="#" class="text-dark"><img src="./images/B03.jpg" class=""></a>
+                            <a href="#" class="text-dark"><img src="./images/B05.jpg" class="" alt="..."></a>
+                            <a href="#" class="text-dark"><img src="./images/B06-2.jpg" class=" " alt="..."></a>
+                            <a href="#" class="text-dark"><img src="./images/B06-3.jpg" class=" " alt="..."></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#" class="text-dark"><img src="./images/B06-3.jpg" class=" " alt="..."></a>
+                            <a href="#" class="text-dark"><img src="./images/B06-4.jpg" class=" " alt="..."></a>
+                            <a href="#" class="text-dark"><img src="./images/B06-5.jpg" class=" " alt="..."></a>
+                            <a href="#" class="text-dark"><img src="./images/B06-6.jpg" class=" " alt="..."></a>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+       
+
+        <div class="container-fluid pt-5">
+            <div class="imageBox">
+                <div class="box row mx-0 col-12  col-xl-12">
+                    <div class="box1 mx-0"><img src="./images/B15.jpg"></div>
+                    <div class="box2 mx-0"><img src="./images/B16.jpg"></div>
+                    <div class="box3 mx-0"><img src="./images/B17.jpg"></div>
+                    <div class="box4 mx-0"><img src="./images/B18.jpg"></div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- The new vintage -->
+        <div class="container border-bottom pt-5">
+            <div class="row pt-5 pb-5 ">
+                <div class="col card pl-5 border-0">
+                    <div class="card-body2">
+                        <h5 class="card-title">The new vintage </h5>
+                        <p class="card-text">with Amrit Kaur</p>
+
+                    </div>
+                </div>
+                <div class="col card pr-5 border-0 col-6">
+                    <div class="card-body3">
+                        <h5 class="card-title">Retro-inspired, feel-good fashion: ’70s suiting, nostalgic knits and
+                            bohemian blouses</h5>
+
+                        <a href="#" class="">Read & shop PORTER</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- SALE上方 -->
+    <content>
+        <div class="container-fluid">
+            <div class="card-deck mt-5 pt-3 mx-auto pb-5 justify-content-center">
+                <div class="card col-10 col-md-5 border-0">
+                    <img src="./images/B07.jpg" class="card-img-top" alt="...">
+                    <div class="card-body4">
+                        <h5 class="card-title pt-3">Mini and mighty</h5>
+                        <p class="card-text">Our must-have dresses are here</p>
+                        <u class="card-text"><a href="#" class="text-dark">Shop dresses</a></u>
+                    </div>
+                </div>
+                <div class="card col-10 col-md-5 border-0">
+                    <img src="./images/B08.jpg" class="card-img-top" alt="...">
+                    <div class="card-body4">
+                        <h5 class="card-title pt-3">The finer things</h5>
+                        <p class="card-text">The new fine jewelry and watch icons</p>
+                        <u class="card-text"><a href="#" class="text-dark">Shop fine jewelry & watches</a></u>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SALE -->
+        <img src="./images/B09.jpg" class="img-fluid mt-5" alt="Responsive image">
+
+
+        <div class="container-fluid ml-5 mt-5">
+            <di class="row align-items-center justify-content-start ">
+                <div class="text-left col-6">
+                    <img src="./images/B01.jpg" class="max-width：100％ ml-0 pt-5" alt="...">
+                </div>
+                <div class="card text-left border-0 mx-auto" style="width: 50rem;">
+                    <div class="card-body pt-3 ">
+                        <h5 class="card-title pt-3">Refresh your closet</h5>
+                        <p class="card-text text-dark pt-4 pb-4">the pre-fall collections arriving now</p>
+                        <u class="pt-5"><a href="#" class="text-dark">Shop pre-fall ’20</a></u>
+                    </div>
+                </div>
+        </div>
+
+
+
+        <!-- 倒數第三區 -->
+        <div class="container pt-5 pb-5 mr-5">
+            <div class="row  justify-content-end">
+                <div class="card-deck">
+                    <div class="card col-12 col-md-6 border-0 pr-5" style="width: 50rem;">
+                        <img src="./images/B11拷貝.jpg" class="card-img-top" alt="...">
+                        <div class="card-body4 col-12">
+                            <h5 class="card-title pt-3">The trophy tote</h5>
+                            <p class="card-text">Practically perfect in every way</p>
+                            <u class="card-text"><a href="#" class="text-dark ">Shop bags</a></u>
+                        </div>
+                    </div>
+                    <div class="card col-12 col-md-6  border-0 pr-5" style="width: 50rem;">
+                        <img src="./images/B12拷貝.jpg" class="card-img-top" alt="...">
+                        <div class="card-body4 pt-3  col-12">
+                            <h5 class="card-title">Top priority</h5>
+                            <p class="card-text">TShop our perfectly printed selection</p>
+                            <u class="card-text"><a href="#" class="text-dark">Shop tops</a></u>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 倒數第二區 -->
+        <div class="container-fluid">
+            <div class="card-deck mt-5 pt-3 mx-auto pb-5">
+                <div class="card col-12 col-md-6 border-0">
+                    <img src="./images/B13.jpg" class="card-img-top" alt="...">
+                    <div class="card-body4">
+                        <h5 class="card-title pt-3">Simply the best</h5>
+                        <p class="card-text">Discover our bestselling pieces</p>
+                        <u class="card-text"><a href="#" class="text-dark">Shop bestsellers</a></u>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-6 border-0">
+                    <img src="./images/B14.jpg" class="card-img-top" alt="...">
+                    <div class="card-body4 pt-3">
+                        <h5 class="card-title">NET SUSTAIN</h5>
+                        <p class="card-text">Making fashion more sustainable</p>
+                        <u class="card-text"><a href="#" class="text-dark">Shop NET SUSTAIN</a></u>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </content>
+    <footer>
+        <div class="contact container-fluid">
+            <div class="row mx-auto justify-content-center">
+                <div class="row col-8">
+                    <div class="title col-9 pt-5 pl-5 ">USEFUL INFORMATION</div>
+                    <!-- <div class=" row malign-items-start justify-content-start"> -->
+                    <div class=" box row col-12 align-items-start pt-3 pl-5 ">
+                        <ul class="col">
+                            <li>Customer Care 24/7</li>
+                            <li>Exchanges & Returns</li>
+                            <li>Payment</li>
+                            <li>Pre-order</li>
+                            <li>Gift Cards</li>
+                            <li>FAQs</li>
+                            <li>About Us</li>
+                            <li>Careers</li>
+                        </ul>
+
+                        <!-- <div class="box pt-3 pl-5 pr-5 mr-5"> -->
+                        <ul class="col">
+                            <li>Careers</li>
+                            <li>Affiliates</li>
+                            <li>Advertising</li>
+                            <li>Terms & Conditions</li>
+                            <li>Privacy Policy</li>
+                            <li>Cookie Policy</li>
+                            <li>NET SUSTAIN</li>
+                        </ul>
+
+                        <!-- <div class="box pt-3 pr-5 mr-5"> -->
+                        <ul class="col">
+                            <li>Our Apps</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-2 pt-5">
+                    <div class="title pl-3">STAY IN TOUCH</div>
+                    <nav class="navbar navbar-light ">
+                        <form class="form-inline">
+                            <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+                            <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+                        </form>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        </div>
+        </div>
+    </footer>
+
+
+    <!-- 原始碼 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
