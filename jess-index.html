@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="./fontawesome/css/all.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./CSS/nav_menulist.css" />
     <link rel="stylesheet" href="./CSS/portfolio.css">
@@ -32,16 +34,18 @@
     <header>
         <div class="nav_menulist">
             <div>
-                <ul>
+                <ul class="nav">
                     <li>
-                        <a href="">About</a>
+                        <a href="" class="aboutme"></a>
+                        <!-- <span class="aboutme">關於我</span> -->
                     </li>
                     <li>
-                        <a href="#bookmark">Portfilio</a>
+                        <a href="#skill" class="jessskill"></a>
                     </li>
                     <li>
-                        <a href="">Link</a>
+                        <a href="#bookmark" class="Portfilio"></a>
                     </li>
+                    
                 </ul>
             </div>
             
@@ -58,19 +62,27 @@
                 </div> -->
                 <div class="title">
                     <h3>Hi, I'm Jess. This is my profile.</h3>
-                    <h1 class="titleB">Jess Sung</h1>
+                    <h1 class="titleB">Portfilio</h1>
                 </div>
             </div>
             <div class="about">   
                 <div class="content">
                     <div class="about1">
-                        <h1>About Me</h1>
+                        <h1>關於我</h1>
                         <span>
-                            我是一個設計師，踏入設計這行業9年，目前任職之公司主要為電視購物之代銷商所接觸商品眾多，從美容保養、紡品精品至生活家電以及生鮮食品都有接觸。
+                            我是宋文荃，現階段經過資策會的專業訓練，投入前端工程師經歷約582小時，從網頁基礎架構的HTML、CSS到Bootsctrap與網頁響應版RWD，對於網站架構與語法應用已相當熟悉並實際應用在個人網站上。以網頁的架構上使用JavaScript達到功能的展現、更新內容與互動控制。搭配JQuery函式庫實做出一款小遊戲並了解其操作性質。
+                            
+                            完整執行過專案為一電商網站，由團隊合作開發完成，從前端架構發想wireframe
+                            到功能設計、畫面動態呈現與後端資料庫做串接都以完整網站做呈現。前端框架使用React，從專案中了解如何將程式碼之結構、樣式、邏輯從中Components模組化，並提高效能且重複管理使用。也學習後端技術PHP、MySQL、Node.js，並建立資料庫，以伺服器基礎架構達成ＣＲＵＤ能與前端學習接軌並整合應用。
+                            
+                            前端設計方面Illustractor與Photoshop已相當熟悉並實際製作各種專案超過9年以上，也使用Adobe
+                            XD製作網站的設計規範並統合，了解UI/UX的使用流程，並搭配使用Zeplin可以快速的傳達設計內容，體現色彩、字體、間距等各項細微的設定，更能確保網站的可被執行性。
+                            
+                            過去做過9年的平面設計師，接觸眾多國內外商品。設計範圍含平面通路、網路通路、電視通路、
+                            實體門市及公司網站維護與更新。設計超過100多個商品專案，並製作過各式雜誌稿、DM、公司CIS等專案，對於色彩敏銳度、排版與畫面呈現皆已相當熟悉，
+                            
+                            從中經歷2年的主管職位並帶領過5人，對於跨部門溝通與協同合作專案經驗豐富，色彩與視覺呈現可以有效率的品質產出。以過往的經歷面對到網路的無遠弗屆、科技的日新月異，網路趨勢已年年向上攀升，了解未來網路商機的重要性，因此投入前端領域讓自己不斷的學習網路技術與如何創造出色的顧客體驗，善加運用自身的美學設計背景，去融入未來網路需求，創造更多的無限可能。
 
-                            除了代銷國內外品牌也經營自家公司品牌，主要設計項目包含節目上需求之字卡、雜誌、DM、報紙稿與背板輸出，產品之LOGO設計與包裝，人物產品之去背與效果校正；除了電視平台另外也有經營網路平台，舉凡網頁所需之Banner及EDM都有製作；公司不定期舉辦的發表會以及尾牙活動等流程與背板形象規劃與輸出，對於所製作的每一個設計品項都會盡力達到要求與準確的呈現。
-
-                            在此任職了8年並努力的坐到了主管職位，帶領的部門共有5人，對於部門的帶領方式為積極、自由、自我要求、並多方面學習。
                         </span>
                     </div>
                     <div class="about2">
@@ -117,14 +129,14 @@
 
                     </div>
             </div>
-            <div class="skills">
+            <div class="skills" >
                 
-                <div class="h2">設計技能</div>
+                <div class="h2" id="skill">設計技能</div>
                 <table class="skill">
                     <tr>
                         <td rowspan="4"></td>
                         <td>- Adobe Photoshop</td>
-                        <td>- Adobe Illastrator</td>
+                        <td>- Adobe Illustrator</td>
                     </tr>
                     <tr>
                         <td>- Adobe XD</td>
@@ -149,82 +161,136 @@
                 </tr>
                 <tr>
                     <td>- JavaScript</td>
-                    <td>- PHP / MySQL</td>
+                    <td>- MySQL / node.js</td>
                 </tr>
                 <tr>
                     <td>- React. </td>
+                    <td>- 開發工具：VScode </td>
                 </tr>
                 <tr>
-                    <td>- Vue. </td>
+                    <td>- Git版本控制 </td>
                 </tr>
                 </table>     
             </div>
             <h1>
             <div class="experience">
-                <h1>EXPERIENCE</h1>
+                <h1>工作經歷</h1>
                 <div class="leftbox">
                     <div class="text1">
                         <h3>2006/03∼2010/03</h3>
                         <p>亞洲大學 數位多媒體設計學系</p>
-                        <p></p>
+                        
                     </div>
                 </div>
                 <div class="leftbox">
                     <div class="text2">
-                        <h3>2010/07∼2011/04</h3>
-                        <p>派卜樂股份有限公司</p>
-                        <p>店內陳設印刷物輸出及雜誌設計</p>
-                        <p></p>
+                        <h3>2011/06∼2020/04</h3>
+                        <p>六員環股份有限公司</p>
+                        <ul class="ex-work">
+                        <li>・ 公司整體形象規劃
+                            <p>
+                            設計範圍含平面通路、網路通路、電視通路、
+                            實體門市及公司網站維護與更新。
+                            </p>
+                        </li>
+                        <li>・ 品牌視覺設計
+                            <p>
+                                執行過100多個專案，代銷國內外品牌及自家品牌 、精美修圖、Logo設計、雜誌稿輸出、各式傳單及ＤＭ、商品包裝設計等視覺設計稿。
+                            </p>
+                        </li>
+                        <li>・ 3間實體門市櫃位及陳列設計
+                            <p>
+                            東區門市與全台寶雅通路，展示櫃整體規劃及產品陳列、門市活動設計與展示架等籌備規
+                            劃，並與廠商做溝通與配合
+                            </p>
+                        </li>
+                        <li>・ 2場展覽會場及4場記者發表會設計
+                            <p>
+                                大陸子公司－上海美博會形象設計。
+                                新品發表記者會之活動與廠商聯繫，活動整體形象規劃、邀請卡設計及各式形象稿
+                            </p>
+                       </li>
+                        <li>
+                        ・ 網站後台維護與更新
+                        <p>
+                            公司官網及各大通路平台之Banner、ＥＤＭ設計及維護公司網站整體形象規劃
+                        </p>
+                       
+                        </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="leftbox">
                     <div class="text3">
-                        <h3>2011/06∼2020/04</h3>
-                        <p>六員環股份有限公司</p>
-                        <p>設計項目包含節目上需求之字卡、雜誌、DM、報紙稿與背板輸出，產品之LOGO設計與包裝，人物產品之去背與效果校正；除了電視平台另外也有經營網路平台，舉凡網頁所需之Banner及EDM都有製作；公司不定期舉辦的發表會以及尾牙活動等流程與背板形象規劃與輸出</p>
+                        <h3>2020年/7月－582小時專業訓練</h3>
+                        <p>資訊工業策進會－前端工程師養成班</p>
+                        <p>1個團隊合作電商網站、2個個人網站
+                        1個UI網站提案、1款小遊戲</p>
+                        <p>由團體合作設計網站，從主題發想、設計風格、概念
+                        使用者介面設計、ＵＸ流程規劃、切版到程式開發。
+                        使用React框架，後端為Node.js</p>
                     </div>
                 </div>
                 <div class="no1">
+                    <div class="line">
+                        <div class="circle1"></div>   
+                         <div class="circle2"></div>   
+                         <div class="circle3"></div>  
+                    </div> 
+                </div>
+                <!-- <div class="no1">
                     <div class="line"></div>
-                    <div class="circle1"></div>   
                 </div>
                 <div class="no1">
                     <div class="line"></div>
-                    <div class="circle2"></div>   
-                </div>
-                <div class="no1">
-                    <div class="line"></div>
-                    <div class="circle3"></div>   
-                </div>
+                </div> -->
             </div>    
             <div class="gallery-container">
-            <div class="galleryList">
+              <div class="galleryList">
                     <p id="bookmark">My Portfilio</p>
-                </div>
+              </div>
                 <div class="gallery">
                     <div class="box">
+                        <div class="content-overlay"></div>
                         <img src="./images/01.jpg">
-                        <h3>平面設計</h3>
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">平面設計</h3>
+                        </div>
                     </div>
                     <div class="box">
-                        <img src="./images/02.JPG">
-                        <h3>產品包裝</h3>
+                        <div class="content-overlay"></div>
+                        <img src="./images/02.jpg">
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">產品包裝</h3>
+                        </div>
                     </div>
                     <div class="box">
+                        <div class="content-overlay"></div>
                         <img src="./images/03.jpg">
-                        <h3>ＣＩＳ</h3>
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">ＣＩＳ</h3>
+                        </div>
                     </div>
                     <div class="box">
+                        <div class="content-overlay"></div>
                         <img src="./images/04.jpg">
-                        <h3>Banner</h3>
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">Banner</h3>
+                        </div>
                     </div>
                     <div class="box">
+                        <div class="content-overlay"></div>
                         <img src="./images/05.jpg">
-                        <h3>EDM</h3>
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">EDM</h3>
+                        </div>
                     </div>
                     <div class="box">
+                        <div class="content-overlay"></div>
                         <img src="./images/06.jpg">
-                        <h3>Website</h3>
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">Website</h3>
+                        </div>
                     </div>
                 </div>
             </div>

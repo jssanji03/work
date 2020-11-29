@@ -31,10 +31,65 @@
   font-family: "Noto Sans TC", sans-serif;
 }
 .box {
+  position: relative;
+  width: 90%;
+  max-width: 30%;
+  overflow: hidden;
+  margin: 20px 10px 20px 10px;
+}
+/* .box {
   width: 25%;
   height: 25%;
   margin: 30px;
   box-shadow: 1px 0.5px 6px rgb(211, 211, 211);
+} */
+
+.box .content-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.box:hover .content-overlay {
+  opacity: 1;
+}
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.box:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3 {
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
 }
 
 .box img {
@@ -47,7 +102,7 @@
   transition-timing-function: ease-in-out; */
 }
 
-.box h3 {
+/* .box h3 {
   width: 100%;
   text-align: center;
   background-color: #fff;
@@ -55,12 +110,12 @@
   font-weight: 400;
   line-height: 4rem;
   margin: 0;
-}
+} */
 
-.box:hover img {
+/* .box:hover img {
   width: 100%;
   filter: brightness(0.8);
   object-fit: none;
-  /* transition-delay: 1s;
-  transition-timing-function: ease-out; */
-}
+  transition-delay: 3s;
+  transition-timing-function: ease-out;
+} */

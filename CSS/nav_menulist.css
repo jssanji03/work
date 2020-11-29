@@ -3,17 +3,19 @@
   flex-direction: column;
   margin: 150px 50px;
   font-size: 1.8rem;
-  
 }
-ul {
+.nav {
   border-left: 1px solid #000;
   list-style-type: none;
   /* list-style-position: outside; */
   margin: 0;
   padding-left: 30px;
 }
-li {
+
+.nav li {
   color: #000;
+  /* padding-left: 30px; */
+  /* border-left: 1px solid #000; */
   margin-top: 24px;
   line-height: 4rem;
   font-family: "Josefin Sans", sans-serif;
@@ -25,11 +27,39 @@ a {
 a:link {
   color: #000;
 }
+a:checked {
+  color: rgb(145, 34, 34);
+}
 a:visited {
   color: #000;
 }
-a:hover {
+.aboutme::after {
+  content: "About";
   color: #000;
-  opacity: 0.3;
+  /* opacity: 0; */
 }
-
+.aboutme:hover::after {
+  content: "關於我";
+  font-size: 1.5rem;
+  color: salmon;
+}
+.jessskill::after {
+  content: "Skill";
+  color: #000;
+  /* opacity: 0; */
+}
+.jessskill:hover::after {
+  content: "技能";
+  font-size: 1.5rem;
+  color: salmon;
+}
+.Portfilio::after {
+  content: "Portfilio";
+  color: #000;
+  /* opacity: 0; */
+}
+.Portfilio:hover::after {
+  content: "作品集";
+  font-size: 1.5rem;
+  color: salmon;
+}
