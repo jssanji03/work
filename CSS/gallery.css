@@ -36,13 +36,8 @@
   max-width: 30%;
   overflow: hidden;
   margin: 20px 10px 20px 10px;
+  cursor: pointer;
 }
-/* .box {
-  width: 25%;
-  height: 25%;
-  margin: 30px;
-  box-shadow: 1px 0.5px 6px rgb(211, 211, 211);
-} */
 
 .box .content-overlay {
   background: rgba(0, 0, 0, 0.7);
@@ -101,21 +96,3 @@
   /* transition-delay: 0.2s;
   transition-timing-function: ease-in-out; */
 }
-
-/* .box h3 {
-  width: 100%;
-  text-align: center;
-  background-color: #fff;
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 4rem;
-  margin: 0;
-} */
-
-/* .box:hover img {
-  width: 100%;
-  filter: brightness(0.8);
-  object-fit: none;
-  transition-delay: 3s;
-  transition-timing-function: ease-out;
-} */

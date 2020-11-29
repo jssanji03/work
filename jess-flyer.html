@@ -6,8 +6,54 @@
     <title>Document</title>
 </head>
 <style>
+    
+    .tab{
+    padding:10px 20px;
+    margin:0px 2px;
+    display:inline-block;
+    color:rgb(109, 109, 109);
+    }
+    .panels{
+    background:#fffffff6;
+    min-height:200px;
+    width:100%;
+    border-radius:3px;
+    overflow:hidden;
+    padding:20px;  
+    }
+    .panel{
+    display:none;
+    animation: fadein .8s;
+    }
+    @keyframes fadein {
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+    }
+   
+    .radio{
+    display:none;
+    }
+    #one:checked ~ .panels #one-panel,
+    #two:checked ~ .panels #two-panel,
+    #three:checked ~ .panels #three-panel,
+    #four:checked ~ .panels #four-panel,
+    #five:checked ~ .panels #five-panel{
+    display:block
+    }
+    #one:checked ~ .tabs #one-tab,
+    #two:checked ~ .tabs #two-tab,
+    #three:checked ~ .tabs #three-tab,
+    #four:checked ~ .tabs #four-tab,
+    #five:checked ~ .tabs #five-tab{
+    border-top: 3px solid salmon;
+    color: salmon;
+    }
     .waterfall{
-        width: 75%;
+        width: 100%;
         margin: 0 auto;
         column-count: 3; 
         column-gap: 30px; 
@@ -21,23 +67,120 @@
     }
     .waterfall img{
         width: 100%;
+        object-fit: cover;
     }
+    .container{
+        width: 75%;
+        margin: 0 auto;
+        text-align: center
+    }
+   .tabs a{
+       text-decoration: none;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 400;
+       margin-right: 2rem;
+       color: rgb(66, 66, 66);
+   }
+   .tabs a:visited :link{
+       text-decoration: none;
+       color: #000;
+   }
 
 
 </style>
 <body>
-    <div class="waterfall">
-        <div class="item"><img src="./images/01/02 2.jpg"></div>
-        <div class="item"><img src="./images/01/A4DM-02.jpg"></div>
-        <div class="item"><img src="./images/01/A5 Magazine MockUp B.png"></div>
-        <div class="item"><img src="./images/01/DM-法.jpg"></div>
-        <div class="item"><img src="./images/01/Poster B.jpg"></div>
-        <div class="item"><img src="./images/01/DM-英.jpg"></div>
-        <div class="item"><img src="./images/01/DM-韓.jpg"></div>
-        <div class="item"><img src="./images/01/Relive-英文雜誌.JPG.jpg"></div>
-        <div class="item"><img src="./images/01/模漾雜誌-4.jpg"></div>
-        <div class="item"><img src="./images/01/蔻緹-英文雜誌.jpg"></div>
-    </div>
     
+    <div class="container">
+        <input class="radio" id="one" name="group" type="radio" checked>
+        <input class="radio" id="two" name="group" type="radio">
+        <input class="radio" id="three" name="group" type="radio">
+        <input class="radio" id="four" name="group" type="radio">
+        <input class="radio" id="five" name="group" type="radio">
+        <div class="tabs">
+            <a href="https://jssanji03.github.io/work/jess-index.html#bookmark">My Portfilio</a>
+            <label class="tab" id="one-tab" for="one">美容保養</label>
+            <label class="tab" id="two-tab" for="two">精品</label>
+            <label class="tab" id="three-tab" for="three">3C家電</label>
+            <label class="tab" id="four-tab" for="four">生鮮食品</label>
+            <label class="tab" id="five-tab" for="five">生活用品</label>
+        </div>
+        <div class="panels">
+            <div class="waterfall">
+                <div class="panel" id="one-panel">
+                    <div class="item"><img src="./images/01/02 2.jpg"></div>
+                    <div class="item"><img src="./images/01/A4DM-02.jpg"></div>
+                    <div class="item"><img src="./images/01/A5 Magazine MockUp B.png"></div>
+                    <div class="item"><img src="./images/01/DM-法.jpg"></div>
+                    <div class="item"><img src="./images/01/Poster B.jpg"></div>
+                    <div class="item"><img src="./images/01/DM-英.jpg"></div>
+                    <div class="item"><img src="./images/01/DM-韓.jpg"></div>
+                    <div class="item"><img src="./images/01/Relive-英文雜誌.JPG.jpg"></div>
+                    <div class="item"><img src="./images/01/模漾雜誌-4.jpg"></div>
+                    <div class="item"><img src="./images/01/蔻緹-英文雜誌.jpg"></div>
+                </div>
+            </div>
+            <div class="waterfall">
+                <div class="panel" id="two-panel">
+                    <div class="item"><img src="./images/02/00.jpg"></div>
+                    <div class="item"><img src="./images/02/01.jpg"></div>
+                    <div class="item"><img src="./images/02/02.jpg"></div>
+                    <div class="item"><img src="./images/02/03.jpg"></div>
+                    <div class="item"><img src="./images/02/04.jpg"></div>
+                    <div class="item"><img src="./images/02/05.jpg"></div>
+                    <div class="item"><img src="./images/02/06.jpg"></div>
+                </div>
+            </div>
+            <div class="waterfall">
+                <div class="panel" id="three-panel">
+                    <div class="item"><img src="./images/03/01-3.jpg"></div>
+                    <div class="item"><img src="./images/03/01.PNG"></div>
+                    <div class="item"><img src="./images/03/02 .PNG"></div>
+                    <div class="item"><img src="./images/03/03.PNG"></div>
+                    <div class="item"><img src="./images/03/04.png"></div>
+                    <div class="item"><img src="./images/03/05.jpg"></div>
+                    <div class="item"><img src="./images/03/05.png"></div>
+                    <div class="item"><img src="./images/03/07.jpg"></div>
+                </div>
+            </div>
+            <div class="waterfall">
+                <div class="panel" id="four-panel">
+                    <div class="item"><img src="./images/04/00.png"></div>
+                    <div class="item"><img src="./images/04/01.PNG"></div>
+                    <div class="item"><img src="./images/04/A.PNG"></div>
+                    <div class="item"><img src="./images/04/B.png"></div>
+                    <div class="item"><img src="./images/04/C.png"></div>
+                    <div class="item"><img src="./images/04/D.png"></div>
+                    <div class="item"><img src="./images/04/E.PNG"></div>
+                    <div class="item"><img src="./images/04/F.png"></div>
+                    <div class="item"><img src="./images/04/G.PNG"></div>
+                    <div class="item"><img src="./images/04/H.PNG"></div>
+                    <div class="item"><img src="./images/04/Tri Fold Brochure MockUp 2.jpg"></div>
+                </div>
+            </div>
+            <div class="waterfall">
+                <div class="panel" id="five-panel">
+                    <div class="item"><img src="./images/05/00.jpg"></div>
+                    <div class="item"><img src="./images/05/01.jpg"></div>
+                    <div class="item"><img src="./images/05/02.jpg"></div>
+                    <div class="item"><img src="./images/05/03.jpg"></div>
+                    <div class="item"><img src="./images/05/01.png"></div>
+                    <div class="item"><img src="./images/05/04.JPG"></div>
+                    <div class="item"><img src="./images/05/05.jpg"></div>
+                    <div class="item"><img src="./images/05/06.jpg"></div>
+                    <div class="item"><img src="./images/05/06.PNG"></div>
+                    <div class="item"><img src="./images/05/07.jpg"></div>
+                    <div class="item"><img src="./images/05/07.PNG"></div>
+                    <div class="item"><img src="./images/05/08.jpg"></div>
+                    <div class="item"><img src="./images/05/08.png"></div>
+                    <div class="item"><img src="./images/05/09.jpg"></div>
+                    <div class="item"><img src="./images/05/10.jpg"></div>
+                    <div class="item"><img src="./images/05/11.jpg"></div>
+                    <div class="item"><img src="./images/05/12.jpg"></div>
+                    <div class="item"><img src="./images/05/13.jpg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
