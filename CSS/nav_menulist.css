@@ -47,6 +47,16 @@ a:visited {
   color: #000;
   /* opacity: 0; */
 }
+.jessexp::after {
+  content: "Experience";
+  color: #000;
+  /* opacity: 0; */
+}
+.jessexp:hover::after {
+  content: "工作經歷";
+  font-size: 1.5rem;
+  color: salmon;
+}
 .jessskill:hover::after {
   content: "技能";
   font-size: 1.5rem;
