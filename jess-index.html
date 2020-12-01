@@ -14,9 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./CSS/nav_menulist.css" />
-    <link rel="stylesheet" href="./CSS/portfolio.css">
-    <link rel="stylesheet" href="./CSS/gallery.css">
+    <link rel="stylesheet" media="screen" href="./CSS/nav_menulist.css" />
+    <link rel="stylesheet" media="screen" href="./CSS/portfolio.css">
+    <link rel="stylesheet" media="screen" href="./CSS/gallery.css">
     
     <style>
         html {
@@ -31,9 +31,9 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="nav_menulist">
-            <div>
+            
                 <ul class="nav">
                     <li>
                         <a href="" class="aboutme"></a>
@@ -50,7 +50,7 @@
                     </li>
                     
                 </ul>
-            </div>
+            
             
         </div>
     </header>
@@ -111,18 +111,18 @@
                     <div class="about3">
                         <table>
                             <tr>
-                                <td class="tdTitle">地址</td>
+                                <td class="tdTitle ">地址</td>
                                 <td>新北市</td>
                             </tr>
                             <tr>
-                                <td class="tdTitle">Web</td>
-                                <td class="tdWeb"><a href="https://issuu.com/jesssung/docs/final-s">https://issuu.com/jesssung/docs/final-s</a></td>
+                                <td class="tdTitle tdTitle2">Web</td>
+                                <td class="tdWeb tdTitle2"><a href="https://issuu.com/jesssung/docs/final-s">https://issuu.com/jesssung/docs/final-s</a></td>
                             </tr>
                             <tr>
                                 <td class="tdTitle">職業</td>
                                 <td>前端工程/設計師</td>
                             </tr>
-                            <tr>
+                            <tr class="icon">
                                 <td><img src="./icon/facebook-square-brands.svg" class="jpg1"></td>
                                 <td><img src="./icon/instagram-square-brands.svg" class="jpg2"></td>
                             </tr>
@@ -175,7 +175,7 @@
                 </tr>
                 </table>     
             </div>
-            <h1>
+            <h1></h1>
             <div class="experience">
                 <h1 id="exp">工作經歷</h1>
                 <div class="leftbox">
@@ -301,7 +301,10 @@
                             <h3 class="content-title">Website</h3></a>
                         </div>
                     </div>
-                    <a href="https://issuu.com/jesssung/docs/final-s" class="jess-link">更多作品</a>
+                    <div class="jess-link">
+
+                        <a href="https://issuu.com/jesssung/docs/final-s" >更多作品</a>
+                    </div>
                 </div>
             </div>
         
