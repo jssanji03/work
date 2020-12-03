@@ -1,0 +1,62 @@
+body {
+  background-color: #e7e7e7;
+}
+
+.navbar {
+  width: 80%;
+  margin: auto;
+  background-color: #FFF;
+  margin-top: 2rem;
+  text-align: center;
+  -webkit-box-shadow: 0.1rem 0.1rem 0.7rem #dadada;
+          box-shadow: 0.1rem 0.1rem 0.7rem #dadada;
+}
+
+.navText {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 1.5rem;
+  list-style: none;
+}
+
+.navText li {
+  padding: 2rem;
+}
+
+.carosol {
+  width: 80%;
+  height: 63rem;
+  background-image: url("https://picsum.photos/1440/665/?random=13");
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 0.1rem 0.1rem 0.7rem #dadada;
+          box-shadow: 0.1rem 0.1rem 0.7rem #dadada;
+  position: relative;
+}
+
+.carosol .more {
+  width: 9rem;
+  background-color: #000;
+  color: #FFF;
+  text-align: center;
+  line-height: 3rem;
+  position: absolute;
+  top: 70%;
+  left: 10%;
+}
+
+.carosol .more:hover {
+  background-color: turquoise;
+}
+
+.carosol h3 {
+  font-size: 3rem;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  position: absolute;
+  top: 80%;
+  left: 10%;
+}
+/*# sourceMappingURL=testall.css.map */

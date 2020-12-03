@@ -14,6 +14,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+
     <link rel="stylesheet" media="screen" href="./CSS/nav_menulist.css" />
     <link rel="stylesheet" media="screen" href="./CSS/portfolio.css">
     <link rel="stylesheet" media="screen" href="./CSS/gallery.css">
@@ -71,7 +75,7 @@
             <div class="about">   
                 <div class="content">
                     <div class="about1">
-                        <h1>關於我</h1>
+                        <h1 class="">關於我</h1>
                         <span>
                             我是宋文荃，現階段經過資策會的專業訓練，投入前端工程師經歷約582小時，從網頁基礎架構的HTML、CSS到Bootsctrap與網頁響應版RWD，對於網站架構與語法應用已相當熟悉並實際應用在個人網站上。以網頁的架構上使用JavaScript達到功能的展現、更新內容與互動控制。搭配JQuery函式庫實做出一款小遊戲並了解其操作性質。
                             
@@ -132,8 +136,9 @@
 
                     </div>
             </div>
-            <div class="skills" >
-                
+            
+            <div class="skills" data-aos="fade-down" data-aos-once="false" data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
                 <div class="h2" id="skill">設計技能</div>
                 <table class="skill">
                     <tr>
@@ -154,7 +159,8 @@
                     </tr>
                 </table>
             </div>
-            <div class="skills">
+            
+            <div class="skills" data-aos="fade-down" data-aos-once="false" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <div class="h2">前端技能</div>
                 <table class="skill">
                 <tr>
@@ -178,14 +184,14 @@
             <h1></h1>
             <div class="experience">
                 <h1 id="exp">工作經歷</h1>
-                <div class="leftbox">
+                <div class="leftbox" data-aos="fade-left" data-aos-offset="300">
                     <div class="text1">
                         <h3>2006/03∼2010/03</h3>
                         <p>亞洲大學 數位多媒體設計學系</p>
                         
                     </div>
                 </div>
-                <div class="leftbox">
+                <div class="leftbox" data-aos="fade-right" data-aos-offset="500">
                     <div class="text2">
                         <h3>2011/06∼2020/04</h3>
                         <p>六員環股份有限公司</p>
@@ -223,7 +229,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="leftbox">
+                <div class="leftbox" data-aos="fade-left" data-aos-offset="600">
                     <div class="text3">
                         <h3>2020年/7月－582小時專業訓練</h3>
                         <p>資訊工業策進會－前端工程師養成班</p>
@@ -312,7 +318,12 @@
         
       
     </div>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+        AOS.init();
+        new WOW().init();
+    </script>
 </body>
 
 </html>
